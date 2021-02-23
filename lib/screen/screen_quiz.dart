@@ -5,6 +5,7 @@ import 'package:quiz_app_test/model/model_quiz.dart';
 import 'package:quiz_app_test/screen/screen_result.dart';
 import 'package:quiz_app_test/widget/widget_candidate.dart';
 
+// ignore: must_be_immutable
 class QuizScreen extends StatefulWidget {
   List<Quiz> quizs;
   QuizScreen({this.quizs});

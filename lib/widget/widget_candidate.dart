@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class CandWidget extends StatefulWidget {
   VoidCallback tap; // voidcallback은 candwidget을 사용하는 부모위젯에서 지정한 ontap을 전달해주는 기능
   String text;
