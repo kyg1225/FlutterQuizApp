@@ -52,7 +52,7 @@ class ResultScreen extends StatelessWidget {
                       color: Colors.white,
                     ),
                     width: width * 0.73,
-                    height: height * 0.25,
+                    height: height * 0.3,
                     child: Column(
                       children: <Widget>[
                         Container(
@@ -96,17 +96,21 @@ class ResultScreen extends StatelessWidget {
                   Container(
                     padding: EdgeInsets.only(bottom: width * 0.048),
                     child: ButtonTheme(
-                      minWidth: width * 0.73,
+                      minWidth: width * 0.75,
                       height: height * 0.05,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: RaisedButton(
                         onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) {
-                            return HomeScreen();
-                          }));
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) {
+                                return HomeScreen();
+                              },
+                            ),
+                          );
                         },
                         child: Text('홈으로 돌아가기'),
                         color: Colors.white,
